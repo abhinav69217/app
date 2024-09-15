@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+* {
+  font-family: "Dosis";
+}
+.container {
+  background: rgb(224, 188, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 188, 243, 1) 0%,
+    rgba(126, 231, 238, 1) 100%
+  );
+  height: 75vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.option p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.option1 {
+  background-color: #ffe5c2;
+  color: #c84ad3;
+}
+
+.option2 {
+  background-color: #b7ffc2;
+  filter: blur(2px);
+}
+
+.option3 {
+  background-color: #e8ffb7;
+  filter: blur(2px);
+}
+
+.option4 {
+  background-color: #c2f0ff;
+}
+
+.option5 {
+  background-color: #dfb7ff;
+  color: #3b5998;
+}
+
+.option6 {
+  background-color: #ffc2f2;
+  color: #c84ad3;
+}

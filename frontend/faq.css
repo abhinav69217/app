@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.faq-container {
+  width: 320px;
+  background: #f2f8ff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: rgb(224, 188, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 188, 243, 1) 0%,
+    rgba(126, 231, 238, 1) 100%
+  );
+  height: fit-content;
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.faq-card {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-image img {
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.faq-content {
+  flex-grow: 1;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.faq-content h2 {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.faq-content p {
+  color: #444;
+  font-size: 10px;
+}
+
+.faq-tag {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #d993f7;
+  font-weight: bold;
+}

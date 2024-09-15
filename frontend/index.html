@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <p>
+          By signing in you are agreeing to our
+          <a href="#">Term and privacy policy</a>
+        </p>
+
+        <div class="tabs">
+          <button class="active">Login</button>
+          <button>Register</button>
+        </div>
+
+        <form onsubmit="validateLogin(event)">
+          <div class="input-group">
+            <label for="email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </label>
+            <input type="email" id="email" placeholder="Email Address" />
+          </div>
+
+          <div class="input-group">
+            <label for="password">
+              <i class="fa-solid fa-lock"></i>
+            </label>
+            <input type="password" id="password" placeholder="Password" />
+            <span class="show-password">
+              <i class="fa-solid fa-eye"></i>
+            </span>
+          </div>
+
+          <div class="remember-forgot">
+            <label> <input type="checkbox" checked /> Remember password </label>
+            <a href="#">Forget password</a>
+          </div>
+
+          <button type="submit" class="btn-login">Login</button>
+
+          <p class="connect">or connect with</p>
+
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+
+          <div class="fingerprint">
+            <i class="fa-solid fa-fingerprint"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function validateLogin(event) {
+        event.preventDefault();
+        const tempUsername = "user@gmail.com";
+        const tempPassword = "pass";
+
+        const enteredEmail = document.getElementById("email").value;
+        const enteredPassword = document.getElementById("password").value;
+
+        if (enteredEmail === tempUsername && enteredPassword === tempPassword) {
+          alert("Login successful!");
+          window.location.href = "options.html";
+        } else {
+          alert("Invalid email or password. Try again.");
+        }
+      }
+    </script>
+  </body>
+</html>
