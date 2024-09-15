@@ -12,7 +12,7 @@ app.use("/api", faqRoutes);
 
 mongoose
   .connect(
-    "mongodb+srv://abhinavjangra217:b3QBHo06ZowcVxHT@cluster0.jj79a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/faqdb",
+    "mongodb+srv://abhinavjangra217:b3QBHo06ZowcVxHT@cluster0.jj79a.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
